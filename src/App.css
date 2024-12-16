@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap");
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: "Roboto" , "sans-serif";
+}
+
+body{
+  width:100vw;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-image: url("../src/assets/3.png");
+  background-repeat: no-repeat; 
+  background-size: cover;    
+  background-position: center;
+}
+
+.bmi-calculator{
+  width:800px;
+  height:500px;
+  padding:20px;
+  background-color: aliceblue;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display:flex;
+}
+
+.box{
+  width:350px;
+  background-image: url("../src/assets/b1.png");
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+
+.data{
+  flex:1;
+  padding:15px;
+}
+h1{
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding:10px 0px;
+  text-transform: uppercase;
+  font-size: 20px;
+  color:rgb(126, 93, 226);
+}
+
+.input-container{
+  margin-bottom: 15px;
+}
+
+label{
+  display: block;
+  margin-bottom: 5px;
+  color:#888;
+}
+
+input{
+  width:100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+button{
+  background-color: rgb(136, 101, 239);
+  color:#fff;
+  border:none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor:pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover{
+  background-color: rgb(86, 48, 200);
+}
+
+.data button:nth-of-type(2){
+  background-color: red;
+  margin-left: 10px;
+}
+
+.data button:nth-of-type(2):hover{
+  background-color: rgb(154, 6, 6);
+}
+.result{
+  margin-top: 20px;
+  padding:10px;
+  border: 1px solid rgb(136, 101, 239);
+  border-radius: 4px;
+}
+
+.result p{
+  margin: 10px 0;
+  color:#555;
+}
+
+.result p:first-child{
+  color: rgb(136, 101, 239);
+  font-weight: bold;
+}
+
+.error{
+  color:red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
